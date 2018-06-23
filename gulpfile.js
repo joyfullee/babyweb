@@ -29,9 +29,10 @@ gulp.task("copy-sass",function(){
 //配置图片
 gulp.task("images",function(){
 	gulp.src("image/**")
-    .pipe(imagemin())
-	.pipe(gulp.dest("dist/image"))
-	.pipe(connect.reload());
+	.pipe(gulp.dest("dist/image"))   //放进去
+    .pipe(imagemin())                //再压缩
+	.pipe(gulp.dest("dist/image"))   //压缩后在放进去
+	.pipe(connect.reload());         //实时更新
 })
 //配置plugin
 gulp.task("copy-plugin",function(){
