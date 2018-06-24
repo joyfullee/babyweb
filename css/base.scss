@@ -6,11 +6,36 @@ a{text-decoration:none; color:#333;}
 h1,h2,h3,h4,h5,h6{font-weight:100;}
 body{ font-family:"微软雅黑";}
 input,a{outline:none;}
+input:-webkit-autofill{
+    　　-webkit-box-shadow: 0 0 0 400px #fff inset;
+    　　-webkit-text-fill-color: #666666;//设置字体颜色
+    }
 #top,#header,#banner,#main,#footer{width:1240px;margin: 0 auto;}
 //#pos
 body{
     position: relative;
 }
+
+// 这里放一些元素离子
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    &::after{
+        content: ".";
+        height: 0;
+        visibility: hidden;
+        clear: both;
+        display: block;
+    }
+}
+.tip_txt{
+    color: #ff4965
+}
+
 #pos{
     position: fixed;
     width: 70px;
