@@ -41,6 +41,13 @@ gulp.task("copy-plugin",function(){
 	.pipe(connect.reload());
 })
 
+gulp.task("copy-json",function(){
+	gulp.src("json/**")
+	.pipe(gulp.dest("dist/json"))
+	.pipe(connect.reload());
+})
+
+
 //watch监听   源文件发生改变，dist也随着改变    
 gulp.task("watch",function(){
 	gulp.watch("index.html",["copy-index"]);
@@ -49,6 +56,7 @@ gulp.task("watch",function(){
 	gulp.watch("sass/**.scss",["copy-sass"]);
 	gulp.watch("js/**.js",["script"]);
 	gulp.watch("plugin/**",["copy-plugin"]);
+	gulp.watch("json/**",["copy-json"]);
 })
 
 //gulp-connect插件搭建本地服务        页面能够能够自动刷新   
