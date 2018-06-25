@@ -1,0 +1,95 @@
+.m-login-warp{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 110px 0; 
+    .downapp{
+        width: 500px;
+        height: 354px;
+        background: url(../image/down.png) 0 0 no-repeat;
+        background-size: cover;
+    }
+    .form_login{
+        box-sizing: border-box;
+        padding: 50px 35px;
+        width: 400px;
+        border: 1px solid #ececec;
+        border-top: 2px solid #ff4965; 
+    }
+    .form-title{
+        font-size: 14px;
+        .title{
+            font-weight: bold;
+            color: #000;
+        }
+        .txt{
+            color: #666;
+            font-size: 13px;
+        }
+    }
+    .form_row{
+        width: 100%;
+        margin-top: 15px;  
+    }
+    .ipt{
+        box-sizing: border-box;
+        border: 1px solid #e6e6e6;
+        border-radius: 2px;
+        padding-left: 30px;
+        position: relative;
+        width: 100%;
+        input{
+            line-height: 30px;
+            width: 100%;
+            border: none;
+            box-sizing: border-box;
+            padding-left:10px; 
+        }
+        &::after{
+            display: block;
+            content: '';
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            padding-right:7px;
+            left: 8px;
+            top: 8px;
+            border-right: 1px solid #e6e6e6;
+            background: url('../image/upload.jpg') no-repeat 
+        }
+        &.ipt_username::after{
+            background-position: 0 0; 
+        }
+        &.ipt_password::after{
+            background-position:0 -47px; 
+        }
+    }
+    .ipt_button{
+        cursor: pointer;
+        text-align: center;
+        background: #ff4965;
+        color: #fff;
+        line-height: 32px;
+        border-radius: 3px;
+        letter-spacing: 10px;
+    }
+    .ipt_tip{
+        font-size: 13px;
+        input{
+            vertical-align: middle;
+        }
+        .auto_login{
+            color: #666;
+            vertical-align: middle;
+        }
+    }
+    .tip_row{
+        font-size: 12px;
+        color: #666;
+    }
+    .err_text{
+        color: #ff4965;
+        font-size: 12px;
+        margin-top: 8px;
+        display: none;
+    }
+}
