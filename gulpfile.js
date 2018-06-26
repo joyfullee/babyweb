@@ -25,7 +25,6 @@ gulp.task("copy-sass",function(){
 //配置图片
 gulp.task("images",function(){
 	gulp.src("image/**")
-	.pipe(gulp.dest("dist/image"))   //放进去
     .pipe(imagemin())                //再压缩
 	.pipe(gulp.dest("dist/image"))   //压缩后在放进去
 	.pipe(connect.reload());         //实时更新
@@ -58,7 +57,7 @@ gulp.task("watch",function(){
 gulp.task("sever",function(){
 	connect.server({root:"dist",livereload:true});
 })
-gulp.task("default",['build',"sever","watch"]); 
+gulp.task("default",["sever","watch"]); 
 
 gulp.task("script",function(){
 	gulp.src("js/**.js")
@@ -68,6 +67,6 @@ gulp.task("script",function(){
 	.pipe(connect.reload());
 });
 
-gulp.task('build',["copy-html","images","copy-sass","script","copy-plugin"])
+gulp.task('build',["copy-html","images","copy-sass","script","copy-plugin","copy-json"])
 
 

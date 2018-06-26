@@ -1,45 +1,58 @@
+// 这里可以写一些复用的类
+.clear {
+    &::after {
+        content: ' ';
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+}
 
 //banner
-
-#banner{
+#banner {
     height: 350px;
+}
 
-}
 .banner_nav {
-    padding: 0 80px;
-    background: white;
-    
-//  border: 1px solid #333333;
-     height: 30px;
-     box-sizing: border-box;
-   
+    @extend .clear;
+    ul {
+        padding: 0 80px;
+        background: white;
+        height: 30px;
+        box-sizing: border-box;
+        float: left;
+        @extend .clear;
+        li {
+            float: left;
+            line-height: 30px;
+            padding: 0 18px 0 18px;
+            box-sizing: border-box;
+            height: 30px;
+            &:hover {
+                border-bottom: 2px solid #f34660;
+            }
+            a {
+                color: #999999;
+                font-size: 12px;
+            }
+        }
+    }
 }
-.banner_nav ul li{
-    float: left;
-    line-height: 30px;
-    padding:0 18px 0 18px;
-}
-.banner_nav ul li:hover {
-    border-bottom: 2px solid #f34660;
-}
-.banner_nav li a{
-   
-    color: #999999;
-    font-size: 12px;
-    
-}
-.yugao{
+
+.yugao {
     float: right;
     width: 160px;
     background: #f7f7f7;
 }
-.yugao em{
-  
+
+.yugao em {
     float: left;
     margin-right: 6px;
     margin-top: 7px;
 }
-.yugao a{
+
+.yugao a {
     float: left;
     color: #ff506b;
     font-size: 12px;
@@ -47,26 +60,25 @@
     margin-left: 40px;
 }
 
-.banner_pic a{
+.banner_pic a {
     display: block;
     width: 1240px;
     height: 320px;
-    background-image:url(../image/banner.png);
+    background-image: url(../image/banner.png);
     background-repeat: no-repeat;
     background-size: 1240px 320px;
 }
 
 //.......................main
-
-#main{
+#main {
     box-sizing: border-box;
     height: auto;
     background: #f9f9f9;
     padding: 0 80px;
     background: #f9f9f9;
-    
 }
-.main_pic img{
+
+.main_pic img {
     width: 1240px;
 }
 
@@ -76,123 +88,141 @@
     font-weight: 900px;
     line-height: 60px;
 }
-#main .main_top span:nth-of-type(2){
+
+#main .main_top span:nth-of-type(2) {
     color: #666666;
-    font-size:18px;
+    font-size: 18px;
 }
-#main .main_top span:nth-of-type(3){
+
+#main .main_top span:nth-of-type(3) {
     font-size: 12px;
     color: #999999;
     margin-left: 360px;
 }
-#main .main_top span:nth-of-type(3) a{
+
+#main .main_top span:nth-of-type(3) a {
     color: #4bc1d2;
 }
+
 //...................main1
-.main1{
+.main1 {
     background: #FFFFFF;
 }
-.main_left{
+
+.main_left {
     float: left;
     background: #f9f9f9;
     width: 805px;
-    
 }
-.main_right{
+
+.main_right {
     float: right;
-   
     width: 253px;
 }
-.main_left .main_item{
+
+.main_left .main_item {
     border: 1px solid #DDDDDD;
 }
-.main_left .tit{
-    height:94px;
-    background:#ffffff;
+
+.main_left .tit {
+    height: 94px;
+    background: #ffffff;
     box-sizing: border-box;
     padding: 20px 20px;
-   
 }
-.main_left .detail{
+
+.main_left .detail {
     height: 237px;
-     background: #ffffff;
+    background: #ffffff;
 }
-.main_left .tit dl{
+
+.main_left .tit dl {
     float: left;
 }
-.main_left .tit dl dt{
+
+.main_left .tit dl dt {
     float: left;
 }
-.main_left .tit dl dd{
+
+.main_left .tit dl dd {
     float: left;
 }
-.main_left dd p:nth-of-type(1){
+
+.main_left dd p:nth-of-type(1) {
     font-size: 18px;
     line-height: 30px;
 }
-.main_left dd p:nth-of-type(2){
+
+.main_left dd p:nth-of-type(2) {
     font-size: 12px;
     line-height: 28px;
     line-height: 30px;
 }
-.main_left .tit img{
+
+.main_left .tit img {
     width: 50px;
     height: 50px;
-  
     margin-right: 12px;
 }
-.main_left .tit .dazhe{
+
+.main_left .tit .dazhe {
     float: right;
     width: 86px;
     height: 32px;
     border: 1px solid #c2adf2;
     border-radius: 30px;
 }
-.main_left .tit .dazhe a{
+
+.main_left .tit .dazhe a {
     display: block;
     text-align: center;
     line-height: 32px;
     font-size: 15px;
     color: #6632de;
 }
-.main_item .detail{
+
+.main_item .detail {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:#ffffff;
+    background: #ffffff;
 }
-.main_item{
+
+.main_item {
     margin-bottom: 15px;
 }
-.main_item .detail img{
+
+.main_item .detail img {
     width: 168px;
     height: 168px;
 }
-.main_item .detail dd a:nth-of-type(1){
+
+.main_item .detail dd a:nth-of-type(1) {
     font-size: 12px;
     color: #6733de;
     line-height: 27px;
-   
 }
-.main_item .detail dd>a:nth-of-type(2){
+
+.main_item .detail dd>a:nth-of-type(2) {
     font-size: 10px;
     color: #8f8f8f;
     line-height: 27px;
-    text-decoration: line-through;}
-    
-    .main_item .detail dd p {
-        width: 150px;
-    }
-.main_item .detail dd p .love{
+    text-decoration: line-through;
+}
+
+.main_item .detail dd p {
+    width: 150px;
+}
+
+.main_item .detail dd p .love {
     font-size: 12px;
     color: #8f8f8f;
     line-height: 28px;
-    display: block;
-//  text-align: center;
-    text-overflow:ellipsis;
+    display: block; //  text-align: center;
+    text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    }
+}
 
 // 你这 .za 和.zw(也就是我改成.mian_item 有啥区别吗)
 // 你为什么 不给他们起一个公共的classname 不就可以只写一次了吗
@@ -205,15 +235,13 @@
 //  }
 //  等于 .a{color:red}  .a .b{color:#fff} 
 //  你看看你写的 可以省多少时  你都不用 这还是最基本的
-
-    //============================
+//============================
 //     .za .detail1{
 //     display: flex;
 //     justify-content: space-between;
 //     align-items: center;
 //     background:#ffffff;
 // }
-
 // .za{
 //     margin-bottom: 15px;
 // }
@@ -225,14 +253,12 @@
 //     font-size: 12px;
 //     color: #6733de;
 //     line-height: 27px;
-   
 // }
 // .za .detail1 dd>a:nth-of-type(2){
 //     font-size: 10px;
 //     color: #8f8f8f;
 //     line-height: 27px;
 //     text-decoration: line-through;}
-    
 //     .za .detail1 dd p {
 //         width: 150px;
 //     }
@@ -246,14 +272,15 @@
 //     overflow: hidden;
 //     white-space: nowrap;
 //     }
-    //==============================
-.main_right_s{
+//==============================
+.main_right_s {
     height: 360px;
-    background:#ffffff;
+    background: #ffffff;
     border: 1px solid #DDDDDD;
     margin-bottom: 12px;
 }
-.main_right_s p a{
+
+.main_right_s p a {
     display: block;
     font-size: 12px;
     color: #959595;
@@ -261,66 +288,75 @@
     height: 34px;
     text-align: center;
 }
-.main_right p img{
+
+.main_right p img {
     display: inline-block;
 }
-.main_right p span{
-     display: inline-block;
-     line-height: 30px;
-     color: #666666;
-     margin-left: 10px;
 
+.main_right p span {
+    display: inline-block;
+    line-height: 30px;
+    color: #666666;
+    margin-left: 10px;
 }
-.main_right_x{
+
+.main_right_x {
     width: 248px;
-   height:auto;
-   
-   border: 1px solid #DDDDDD;
-   background: #ffffff;
+    height: auto;
+    border: 1px solid #DDDDDD;
+    background: #ffffff;
 }
-.today{
+
+.today {
     height: 40px;
     background: #f8f8f8;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.today li{
-  width: 125px;
+
+.today li {
+    width: 125px;
 }
-.today li a{
+
+.today li a {
     display: block;
     text-align: center;
     color: #868686;
     font-size: 12px;
 }
-.today li:hover{
+
+.today li:hover {
     border-bottom: 2px solid #ff647c;
 }
-.select{
+
+.select {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
 }
-.select li img{
+
+.select li img {
     width: 124px;
     height: 56px;
 }
-.select li{
+
+.select li {
     border-right: 1px dashed #DDDDDD;
     border-bottom: 1px dashed #DDDDDD;
 }
 
 //热销
-.main_right_x .hot_nav{
+.main_right_x .hot_nav {
     height: 32px;
     box-sizing: border-box;
 }
-.hot_nav li{
+
+.hot_nav li {
     float: left;
     width: 60px;
-     height: 32px;
+    height: 32px;
     font-size: 12px;
     color: #959595;
     border: 1px solid #DDDDDD;
@@ -328,66 +364,74 @@
     line-height: 32px;
     background: #e7e7e7;
 }
-.hot_nav li:hover{
-    background:white;
-    border:1px solid white;
+
+.hot_nav li:hover {
+    background: white;
+    border: 1px solid white;
 }
-.hot_list a{
+
+.hot_list a {
     padding: 10px;
     box-sizing: border-box;
 }
-.hot_list a img{
+
+.hot_list a img {
     width: 70px;
     height: 70px;
     border: 0;
     float: left;
-    margin-right:5px;
+    margin-right: 5px;
 }
+
 .hot_list a {
     display: block;
     width: 248px;
     height: 91px;
     border: 1px solid #DDDDDD;
 }
-.hot_list a .items{
+
+.hot_list a .items {
     float: left;
     width: 150px;
     margin-top: 10px;
-    
 }
-.hot_list .items .items_tit{
+
+.hot_list .items .items_tit {
     font-size: 12px;
-    color: #3e3e3e;
-//  height: 40px;
+    color: #3e3e3e; //  height: 40px;
     line-height: 17px;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space:nowrap;
-    
-    
+    white-space: nowrap;
 }
-.hot_list .items_price span{
+
+.hot_list .items_price span {
     font-size: 12px;
     line-height: 23px;
     color: #ff5482;
 }
-.hot_list .items_price span:nth-child(2){
+
+.hot_list .items_price span:nth-child(2) {
     text-decoration: line-through;
     color: #a5a5a5;
     margin-left: 10px;
 }
-.main_left{
+
+.main_left {
     height: 348px;
     width: 805px;
     float: left;
 }
-.ohover{
+
+.ohover {
     display: block !important;
 }
-.data1{
+
+.data1 {
     height: 300px;
 }
-#list{
+
+#list {
     height: 300px;
     border: 1px solid #DDDDDD;
     display: none;
