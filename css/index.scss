@@ -103,7 +103,7 @@
    
     width: 253px;
 }
-.main_left .zw{
+.main_left .main_item{
     border: 1px solid #DDDDDD;
 }
 .main_left .tit{
@@ -155,35 +155,35 @@
     font-size: 15px;
     color: #6632de;
 }
-.zw .detail{
+.main_item .detail{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background:#ffffff;
 }
-.zw{
+.main_item{
     margin-bottom: 15px;
 }
-.zw .detail img{
+.main_item .detail img{
     width: 168px;
     height: 168px;
 }
-.zw .detail dd a:nth-of-type(1){
+.main_item .detail dd a:nth-of-type(1){
     font-size: 12px;
     color: #6733de;
     line-height: 27px;
    
 }
-.zw .detail dd>a:nth-of-type(2){
+.main_item .detail dd>a:nth-of-type(2){
     font-size: 10px;
     color: #8f8f8f;
     line-height: 27px;
     text-decoration: line-through;}
     
-    .zw .detail dd p {
+    .main_item .detail dd p {
         width: 150px;
     }
-.zw .detail dd p .love{
+.main_item .detail dd p .love{
     font-size: 12px;
     color: #8f8f8f;
     line-height: 28px;
@@ -193,45 +193,59 @@
     overflow: hidden;
     white-space: nowrap;
     }
+
+// 你这 .za 和.zw(也就是我改成.mian_item 有啥区别吗)
+// 你为什么 不给他们起一个公共的classname 不就可以只写一次了吗
+// 还有你这是scss吗 最基本的scss嵌套你都不用?
+//  .a{
+//     color:red
+//     .b{
+//         color:#fff
+//     }
+//  }
+//  等于 .a{color:red}  .a .b{color:#fff} 
+//  你看看你写的 可以省多少时  你都不用 这还是最基本的
+
     //============================
-    .za .detail1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background:#ffffff;
-}
-.za{
-    margin-bottom: 15px;
-}
-.za .detail1 img{
-    width: 168px;
-    height: 168px;
-}
-.za .detail1 dd a:nth-of-type(1){
-    font-size: 12px;
-    color: #6733de;
-    line-height: 27px;
+//     .za .detail1{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     background:#ffffff;
+// }
+
+// .za{
+//     margin-bottom: 15px;
+// }
+// .za .detail1 img{
+//     width: 168px;
+//     height: 168px;
+// }
+// .za .detail1 dd a:nth-of-type(1){
+//     font-size: 12px;
+//     color: #6733de;
+//     line-height: 27px;
    
-}
-.za .detail1 dd>a:nth-of-type(2){
-    font-size: 10px;
-    color: #8f8f8f;
-    line-height: 27px;
-    text-decoration: line-through;}
+// }
+// .za .detail1 dd>a:nth-of-type(2){
+//     font-size: 10px;
+//     color: #8f8f8f;
+//     line-height: 27px;
+//     text-decoration: line-through;}
     
-    .za .detail1 dd p {
-        width: 150px;
-    }
-.za .detail1 dd p .love{
-    font-size: 12px;
-    color: #8f8f8f;
-    line-height: 28px;
-    display: block;
-//  text-align: center;
-    text-overflow:ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    }
+//     .za .detail1 dd p {
+//         width: 150px;
+//     }
+// .za .detail1 dd p .love{
+//     font-size: 12px;
+//     color: #8f8f8f;
+//     line-height: 28px;
+//     display: block;
+// //  text-align: center;
+//     text-overflow:ellipsis;
+//     overflow: hidden;
+//     white-space: nowrap;
+//     }
     //==============================
 .main_right_s{
     height: 360px;
