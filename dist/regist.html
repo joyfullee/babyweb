@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>贝贝网|登录</title>
+	<title>贝贝网|注册</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./plugin/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/register.css" />
@@ -37,27 +37,38 @@
 			<div class="form-title clear">
 				<div class="fl title">新用户注册</div>
 				<span class="fr txt">已有账号
-					<a href="./regist.html" class="tip_txt">立即登录</a>
+					<a href="./login.html" class="tip_txt">立即登录</a>
 				</span>
 			</div>
+			<!--手机号邮箱-->
 			<div class="form_row ipt_username">
 				<div class="ipt">
-					<input type="text" id="username" name="username" placeholder="您的手机号/邮箱" />
+					<input type="text" id="txt1" name="txt1" placeholder="您的手机号/邮箱" />
 				</div>
 				<!-- 这里是用来弹出错误提示的 -->
-				<p class="err_text err_text_username">请输入正确的手机号或邮箱</p>
+	<p class="err_text err_text_username">请输入正确的手机号或邮箱</p>
 			</div>
+			<!--结束-->
 			<div class="form_row ipt_password">
 				<div class="ipt">
-					<input type="password" id="password" placeholder="密码">
+					<input type="password" id="password" placeholder="请输入包含数字，字母，下划线的密码">
 				</div>
 				<!-- 这里是用来弹出错误提示的 -->
 				<p class="err_text err_text_password">请输入6-16位贝贝密码</p>
 			</div>
 			<div class="form_row ipt_password">
+				<!--验证码-->
 				<div class="ipt">
-					<input type="password" id="password2" placeholder="确认密码">
+					<input type="text" id="txt" placeholder="输入验证码">
+					
 				</div>
+				<!---->
+				 <p id="yz"></p>
+				<input type="button" name="btn1" id="btn1" value="刷新" />
+		        <input type="button" name="btn2" id="btn2" value="提交" />
+		        <span id="tishi"></span>
+		       
+				<!--验证码-->
 				<!-- 这里是用来弹出错误提示的 -->
 				<p class="err_text err_text_password">请输入6-16位贝贝密码</p>
 			</div>
@@ -142,5 +153,9 @@
 		</div>
 
 </body>
+<script src="plugin/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/resign.js" type="text/javascript" charset="utf-8"></script>
+
+
 
 </html>

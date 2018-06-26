@@ -1,3 +1,4 @@
+
 //banner
 
 #banner{
@@ -7,6 +8,7 @@
 .banner_nav {
     padding: 0 80px;
     background: white;
+    
 //  border: 1px solid #333333;
      height: 30px;
      box-sizing: border-box;
@@ -364,4 +366,15 @@
     height: 348px;
     width: 805px;
     float: left;
+}
+.ohover{
+    display: block !important;
+}
+.data1{
+    height: 300px;
+}
+#list{
+    height: 300px;
+    border: 1px solid #DDDDDD;
+    display: none;
 }

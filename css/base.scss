@@ -270,13 +270,14 @@ body{
   top: 40px;
   left:-200px;
     width:500px;
-    height: 500px;
+    height:300px;
     z-index: 999990;
    
-    display: none;
+ display: none;
 }
 .search_fl:hover #meau{
     display: block;
+  background:#f4f4f4;
 }
 #meau .meau_search_l:hover{
     color: red;
@@ -334,7 +335,17 @@ body{
     height: 100px;
     border: 1px dashed #DDDDDD;
 }
-
+.data1{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: white;
+    
+}
+#meau_search{
+    height: 300px;
+    font-size: 12px;
+}
 //.............................搜索框
 
 .input_wrap{
@@ -481,4 +492,18 @@ background:gainsboro ;
     margin-left: 12px;
   
  
+}
+.data1 {
+    display: none;
+    
+}
+.hover{
+    display: block !important; 
+}
+.data1 span{
+    color: #000000;
+    line-height: 20px;
+}
+.data1 li{
+    border: 1px solid #DDDDDD;
 }
