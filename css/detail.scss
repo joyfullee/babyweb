@@ -1,0 +1,209 @@
+#main{
+    width:1080px;
+    min-height: 600px;
+    background:#f2f4f6;
+    padding: 0 80px;
+}
+.main_top{
+    font-size: 12px;
+    color: #999999;
+    line-height: 50px;
+}
+.main_top a{
+   font-size: 12px;
+    color: #999999; 
+}
+.main_wrap{
+    width:1087px;
+    min-height: 600px;
+    background: white;
+//  border: 1px solid black;
+    padding-left: 20px; 
+    padding: 20px;  
+}
+
+//放大镜
+#zoomBox{
+                position: relative;
+                width: 400px;
+                height: 400px;
+                border: 1px solid #CECECE;
+                cursor: move;
+                float: left;
+                              
+            }
+            #midArea{
+                width: 400px;
+                height: 400px;
+            }
+            #midArea img{
+                width: 400px;
+                height: 400px;
+            }
+            #zoom{
+                display: none;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background:yellowgreen;
+                opacity: .5;
+            }
+            #bigArea{
+                display: none;
+                position: absolute;
+                left:400px;
+                top: -1px;
+                width: 400px;
+                height: 400px;
+                border: 1px solid #CECECE;
+                overflow: hidden;
+            }
+            #bigArea img{
+                position: absolute;
+                width: 800px;
+                height: 800px;
+            }
+#zoomBox li{
+    width: 76px;
+    height: 76px;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #DDDDDD;
+    margin-top: 30px;
+    
+}            
+ #zoomBox li img{
+     width: 76px;
+     height: 76px;
+     border: 0;
+     cursor: pointer;
+ }       
+ #midArea img{
+     position: absolute;
+ }   
+.minhover{
+   z-index:9990;
+}
+.bighover{
+z-index: 999;
+}
+
+            
+//右边详情
+.detail{
+    float: left;
+    margin-left: 20px;
+//  background: pink;
+
+}
+.detail h3{
+    width: 548px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.detail h3 span{
+display: inline-block;
+margin-right: 10px;
+color: red;
+
+}
+.detail p{
+width:548px;
+font-size: 12px;
+line-height: 20px;
+}
+.price{
+width: 575px;
+height: 85px;
+background: #fe4a7a;
+text-align: center;
+margin-top: 30px;
+
+
+}
+.price em{
+float: left;
+font-size: 12px;
+margin-top: 10px;
+line-height: 85px;
+margin-left: 30px;
+}
+.price i{
+float: left;
+font-size: 50px;
+color:white ;
+line-height: 85px;
+}
+del{
+float: left;
+line-height: 85px;
+margin-left: 20px;
+color: white;
+font-size: 12px;}
+.discount{
+float: left;
+margin-left: 70px;
+color: white;
+font-size: 12px;
+border-left: 1px dashed #DDDDDD;
+border-right: 1px dashed #DDDDDD;
+width: 72px;
+height: 36px;
+margin-top: 30px;
+text-align: center;
+}
+
+.num{
+margin-top: 80px;}
+
+.num span{
+font-size:15px;
+color: #868686;
+
+margin-right: 20px;
+}
+#btn{
+ width: 30px;
+ height: 30px;
+ text-align: center;
+ background: gainsboro;
+}
+.num a{
+border: 1px solid #DDDDDD;
+display: inline-block;
+width: 30px;
+border: 1px solid #DDDDDD;
+text-align: center;
+height: 30px;}
+
+.detail #txt{
+
+width: 120px;
+background: #fe4a7a;
+color: white;
+line-height: 80px;
+text-align: center;
+height: 40px;
+border: 0;
+margin-top: 30px;
+margin-left: 60px;
+border-radius: 10px;
+margin-bottom: 30px;
+
+}
+.datail{
+border: 1px dashed #DDDDDD;
+}
+.time{
+width:100%;
+margin-top: 50px;
+border-top: 1px dashed #DDDDDD;
+padding: 50px;
+
+}
+
+
+
+
+

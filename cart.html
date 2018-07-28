@@ -2,9 +2,183 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>购物车页面</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 	</head>
 	<body>
-		萨达哈斯hahahah
+		<div id="top">
+		<ul class="nav_list">
+			<li>您好，
+				<a href="login.html">请登录&nbsp;&nbsp;</a>
+				<a class="pink" href="regist.html">免费注册</a>
+			</li>
+			<span>|</span>
+			<li>
+				<a href="">商家入住</a>
+			</li>
+			<span>|</span>
+			<li id="beibei1">
+
+				<a href="">贝贝商家中心</a>
+				<a href="">
+					<img src="image/jiantou.jpg">
+				</a>
+
+				<ul class="nav_two">
+
+					<li>
+						<a href="">贝店商家中心</a>
+						<br />
+						<a href="">供应商中心</a>
+					</li>
+				</ul>
+
+			</li>
+			<span>|</span>
+
+			<!--帮助中心-->
+			<li id="beibei2">
+
+				<a href="">帮助中心</a>
+				<a href="">
+					<img src="image/jiantou.jpg">
+				</a>
+				<ul class="help">
+
+					<li>
+						<a href="">联系客服</a>
+					</li>
+
+				</ul>
+
+			</li>
+			<span>|</span>
+
+			<li>
+
+				<a href="">关注</a>
+				<a href="">
+					<img src="image/jiantou.jpg">
+				</a>
+
+				<div id="erweima">
+					<p>微信号：beibeiclub</p>
+					<img src="image/erweima.png" style="width: 90px;height: 90px;" />
+					<p> 订阅贝贝官方微信</p>
+				</div>
+
+			</li>
+
+		</ul>
+	</div>
+		
+		<div id="header">
+		<div class="header_top">
+			<h1>
+				<a href="http://www.beibei.com/">
+					<img src="image/logo.png" />
+				</a>
+			</h1>
+
+			<!--header_top的右边-->
+			<div class="right">
+				<h2>
+					<a href="http://www.beibei.com/guarantee/">
+						<img src="image/header_logo.jpg">
+					</a>
+				</h2>
+				<!--购物车-->
+				<div class="header_cart">
+					<div class="header_cart_l">
+						<img src="image/cart.jpg" />
+					</div>
+					<div class="header_cart_r">
+						我的购物车
+						<img src="image/jt.jpg" />
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+		</div>
+		</div>
+		
+		<!--------------------------->
+		
+		<!--主要部分-->
+		<div id="cart_main">
+			
+			<div id="cart_list_wrap">
+				<div id="cart_title">
+					<span>商品信息</span>
+					<span>赠送贝壳币</span>
+					<span>单价</span>
+					<span>数量</span>
+				<!--/	<span>折扣/优惠</span>-->
+					<span>折扣价</span>
+					<span>操作</span>
+				</div>
+					<ul id="cart_list">
+						<!--需要插入的li-->
+							<!--<li>
+								
+								<img src="image/12.jpg"/>
+								
+								<div>
+									<p>
+										<a href="">哈哈哈哈哈哈哈
+</a>	<br />							<span>( 尺码:42,颜色:深褐灰+红荧光+1号黑色 )</span>
+									</p>									
+								</div>
+							
+								<strong>0</strong>
+						
+								<strong>￥399.00</strong>
+								
+								<div>
+									<input type="button"  class="reduce" value="-" />
+									<input type="text" class="num_line_txt" value="1"/>
+									<input type="button"  class="plus" value="+" />
+								</div>
+								
+							<strong>-￥40.00</strong>
+							
+							<strong>-￥359.00</strong>
+							<p class="cart_delete">
+								<a href="">收藏</a>
+								<a href="">删除</a>
+							</p>								
+							</li>-->
+						<!--li结尾-->	
+						
+				
+				
+					</ul>
+				
+					<div class="cart_bottom">
+						<div id="all_nums">
+							商品数量: <b style="color: red;"></b> 件
+						</div>
+						<div id="all_money">
+							商品总金额:<b style="color: red;"></b>
+						</div>
+					</div>
+					
+					<div id="con_or_stop">
+						<a href="">继续购物</a>
+						<a href="">确认订单</a>
+					</div>
+			</div>
+		</div>
+		
+		
+		<script src="plugin/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

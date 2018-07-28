@@ -24,7 +24,7 @@ $(function(){
 						
 					}
 				})
-				$("#btn1").click();   //如果不写这一步，只有页面刷新的时候才会出现验证码 
+				$("#btn1").click();   
 			})
 
 //正则  密码
@@ -46,7 +46,7 @@ $(".ipt_button").click(function(){
            $(".err_text_password").css("display","block");
        }
 	
-	 //重点！！！！点击后注册成功到登录界面   不成功显示已经注册
+	 //点击后注册成功到登录界面   不成功显示已经注册
 	 
 	 //接口："http://datainfo.duapp.com/shopdata/userinfo.php"
 	 $.get(
@@ -62,7 +62,7 @@ $(".ipt_button").click(function(){
 			window.location.href="http://localhost:8080/login.html";
 			}
 			
-});  //get --end
+}); 
 	 
 	 
 	 

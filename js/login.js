@@ -27,24 +27,27 @@
 			
 			//调接口
 			
-			$(".form_row").click(function(){
+			$(".ipt_button").click(function(){
+				//console.log($("#txt1").val(),$("#password").val())
 	$.get(
 		"http://datainfo.duapp.com/shopdata/userinfo.php",
-		{"status":"login","userID":$("#txt1").val(),"password":$("#password").val()},
+		{"status":"login","userID":$("#username").val(),"password":$("#password").val()},
 		function(data){
+			data = JSON.parse(data);     //字符串转对象  data.[]取东西  字符串取不出来 获取到数据，用不了
 			console.log(data)
-			
+			//、、=====
 			if(data == 0){
 				alert("用户名不存在");
 			}
 			if(data==2){
 				alert("密码不符");
 			}else{
-				window.location.href="http://localhost:8080";
+				$.cookie("username",data.userID,{expires:7,path:"/"});
+				location.href="index.html";
 			}
 
 			
-});  //get --end
+});  
 				
 			})
 				

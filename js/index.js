@@ -117,6 +117,8 @@ $(function () {
 				)
 		}
 	})
+	
+	
 	// mian.json 这里用来获取main.json 的数据
 	//获取接口id数据
 	$.get("json/indexmain.json", function (data) {
@@ -210,58 +212,58 @@ $(function () {
 		}
 	});
 
-	// function foo5(a) {
-	// 	var b5 = a.data; //b数组
-	// 	bar(b5, 0);
+	 function foo5(a) {
+	 	var b5 = a.data; //b数组
+	 	bar(b5, 0);
 
-	// }
-	// $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
-	// 	foo1(data);
-	// });
+	 }
+	 $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
+	 	foo1(data);
+	 });
 
-	// function foo1(a) {
-	// 	var b1 = a.data; //b数组
-	// 	bar(b1, 1);
+	 function foo1(a) {
+	 	var b1 = a.data; //b数组
+	 	bar(b1, 1);
 
-	// }
+	 }
 
-	// $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
-	// 	foo2(data);
-	// });
+	 $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
+	 	foo2(data);
+	 });
 
-	// function foo2(a) {
-	// 	var b2 = a.data; //b数组
-	// 	bar(b2, 2);
+	 function foo2(a) {
+	 	var b2 = a.data; //b数组
+	 	bar(b2, 2);
 
-	// }
-	// $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
-	// 	foo3(data);
-	// });
+	 }
+	 $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
+	 	foo3(data);
+	 });
 
-	// function foo3(a) {
-	// 	var b3 = a.data; //b数组
-	// 	bar(b3, 3);
+	 function foo3(a) {
+	 	var b3 = a.data; //b数组
+	 	bar(b3, 3);
 
-	// }
+	 }
 
-	// $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
-	// 	foo4(data);
-	// });
+	 $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
+	 	foo4(data);
+	});
 
-	// function foo4(a) {
-	// 	var b4 = a.data; //b数组
-	// 	bar(b4, 4);
+	 function foo4(a) {
+	 	var b4 = a.data; //b数组
+		bar(b4, 4);
 
-	// }
-	// $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
-	// 	foo6(data);
-	// });
+	 }
+	 $.getJSON("https://rec.www.mi.com/rec/collection?jsonpcallback=aa&callback=?", function (data) {
+	 	foo6(data);
+	 });
 
-	// function foo6(a) {
-	// 	var b6 = a.data; //b数组
-	// 	bar(b6, 6);
+	 function foo6(a) {
+	 	var b6 = a.data; //b数组
+	 	bar(b6, 6);
 
-	// }
+	 }
 
 
 	//.生成结束.......................
@@ -315,4 +317,3 @@ $(function () {
 // 你明天搜下立即执行函数 window.onload jquery.ready 看看他们的含义区别
 
 
-//..........搜索框................
